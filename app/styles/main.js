@@ -17,24 +17,27 @@ const styles = StyleSheet.create({
         color : '#333333',
         marginBottom : 5,
     },
-    container2: {
-        flex: 1,
-        flexDirection: 'column',
-        backgroundColor: 'black'
+    container2 : {
+        flex : 1,
+        flexDirection : 'column',
+        backgroundColor : 'black'
     },
-    preview: {
-        flex: 1,
-        justifyContent: 'flex-end',
-        alignItems: 'center'
+    redText : {
+        color : 'red'
     },
-    capture: {
-        flex: 0,
-        backgroundColor: '#fff',
-        borderRadius: 5,
-        padding: 15,
-        paddingHorizontal: 20,
-        alignSelf: 'center',
-        margin: 20
+    preview : {
+        flex : 1,
+        justifyContent : 'flex-end',
+        alignItems : 'center'
+    },
+    capture : {
+        flex : 0,
+        backgroundColor : '#fff',
+        borderRadius : 5,
+        padding : 15,
+        paddingHorizontal : 20,
+        alignSelf : 'center',
+        margin : 20
     }
 });
 
