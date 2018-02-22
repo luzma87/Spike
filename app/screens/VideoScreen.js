@@ -12,11 +12,12 @@ import {
 } from 'react-native';
 import {RNCamera} from 'react-native-camera';
 
-let RNFS = require('react-native-fs')
+let RNFS = require('react-native-fs');
 
 import styles from "../styles/main";
 
 type Props = {};
+const maxTime = 10;
 export default class MainScreen extends Component<Props> {
 
     static navigationOptions = {
@@ -27,18 +28,21 @@ export default class MainScreen extends Component<Props> {
         super(props);
 
         this.state = {
-            buttonText : "Start"
+            buttonText : "Start",
+            timer : 0
         };
     }
 
     takePicture() {
         if (this.camera) {
-            const options = {maxDuration : 2};
-            this.setState({...this.state, ...{buttonText : "Stop"}});
+            const options = {maxDuration : maxTime};
+            this.setState({...this.state, ...{buttonText : "Stop", recording : true}});
+            let interval = this.startTimer();
             const data = this.camera.recordAsync(options);
             data
                 .then((param) => {
-                    console.log(param.uri);
+                    this.stopTimer(interval);
+
                     // let destPath = RNFS.DocumentDirectoryPath + '/test.mp4';
                     let destPath = RNFS.ExternalStorageDirectoryPath + '/test.mp4';
                     const result = RNFS.moveFile(param.uri, destPath);
@@ -49,13 +53,26 @@ export default class MainScreen extends Component<Props> {
                         console.log(error);
                     });
 
-                    this.setState({...this.state, ...{buttonText : "Again?"}});
+                    this.setState({...this.state, ...{buttonText : "Again?", recording : false}});
                 })
                 .catch(() => {
-                    this.setState({...this.state, ...{buttonText : "SORRY"}});
+                    this.stopTimer(interval);
+                    this.setState({...this.state, ...{buttonText : "SORRY", recording : false}});
                 });
         }
     };
+
+    startTimer() {
+        return setInterval(() => {
+            let c = this.state.timer;
+            this.setState({...this.state, ...{timer : c + 1}});
+        }, 1000);
+    }
+
+    stopTimer(interval) {
+        clearInterval(interval);
+        this.setState({...this.state, ...{timer : ''}});
+    }
 
     render() {
         return (
@@ -81,6 +98,10 @@ export default class MainScreen extends Component<Props> {
                     >
                         <Text style={{fontSize : 14}}> {this.state.buttonText} </Text>
                     </TouchableOpacity>
+                    {this.state.recording ?
+                     <Text style={{color : 'purple'}}>{maxTime - this.state.timer}</Text> :
+                     null}
+
                 </View>
 
             </View>
