@@ -12,6 +12,8 @@ import {
 } from 'react-native';
 import {RNCamera} from 'react-native-camera';
 
+let RNFS = require('react-native-fs')
+
 import styles from "../styles/main";
 
 type Props = {};
@@ -37,6 +39,16 @@ export default class MainScreen extends Component<Props> {
             data
                 .then((param) => {
                     console.log(param.uri);
+                    // let destPath = RNFS.DocumentDirectoryPath + '/test.mp4';
+                    let destPath = RNFS.ExternalStorageDirectoryPath + '/test.mp4';
+                    const result = RNFS.moveFile(param.uri, destPath);
+                    result.then(() => {
+                        console.log(destPath);
+                        console.log('File successfully copied')
+                    }).catch((error) => {
+                        console.log(error);
+                    });
+
                     this.setState({...this.state, ...{buttonText : "Again?"}});
                 })
                 .catch(() => {
