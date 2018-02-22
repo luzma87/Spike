@@ -17,7 +17,7 @@ let RNFS = require('react-native-fs');
 import styles from "../styles/main";
 
 type Props = {};
-const maxTime = 5;
+const maxTime = 2;
 export default class MainScreen extends Component<Props> {
 
     static navigationOptions = {
@@ -33,7 +33,24 @@ export default class MainScreen extends Component<Props> {
         };
     }
 
+    listFiles(rootDir) {
+        console.log(rootDir);
+        RNFS.readDir(rootDir)
+            .then((result) => {
+                result.forEach((item) => {
+                    if (item.isFile()) {
+                        console.log("FILE: " + item.name);
+                    }
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
+
     takePicture() {
+        const rootDir = RNFS.DocumentDirectoryPath;
+
         if (this.camera) {
             const options = {maxDuration : maxTime};
             this.setState({...this.state, ...{buttonText : "Stop", recording : true}});
@@ -44,17 +61,18 @@ export default class MainScreen extends Component<Props> {
                     this.stopTimer(interval);
                     let filename = `test-${Date.now()}.mp4`;
 
-                    // let destPath = RNFS.DocumentDirectoryPath + '/test.mp4';
-                    let destPath = RNFS.ExternalStorageDirectoryPath + '/' + filename;
+                    let destPath = `${rootDir}/${filename}`;
                     const result = RNFS.moveFile(param.uri, destPath);
                     result.then(() => {
-                        console.log(destPath);
+                        // console.log(destPath);
                         console.log('File successfully copied')
                     }).catch((error) => {
                         console.log(error);
                     });
 
                     this.setState({...this.state, ...{buttonText : "Again?", recording : false}});
+
+                    this.listFiles(rootDir);
                 })
                 .catch(() => {
                     this.stopTimer(interval);
