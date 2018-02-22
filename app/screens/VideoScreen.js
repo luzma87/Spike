@@ -24,14 +24,24 @@ export default class MainScreen extends Component<Props> {
     constructor(props) {
         super(props);
 
-        this.state = {}
+        this.state = {
+            buttonText : "Start"
+        };
     }
 
-    takePicture = async function() {
+    takePicture() {
         if (this.camera) {
-            const options = { quality: 0.5, base64: true };
-            const data = await this.camera.takePictureAsync(options)
-            console.log(data.uri);
+            const options = {maxDuration : 2};
+            this.setState({...this.state, ...{buttonText : "Stop"}});
+            const data = this.camera.recordAsync(options);
+            data
+                .then((param) => {
+                    console.log(param.uri);
+                    this.setState({...this.state, ...{buttonText : "Again?"}});
+                })
+                .catch(() => {
+                    this.setState({...this.state, ...{buttonText : "SORRY"}});
+                });
         }
     };
 
@@ -47,17 +57,17 @@ export default class MainScreen extends Component<Props> {
                         this.camera = ref;
                     }}
                     style={styles.preview}
-                    type={RNCamera.Constants.Type.back}
-                    flashMode={RNCamera.Constants.FlashMode.on}
+                    type={RNCamera.Constants.Type.front}
+                    flashMode={RNCamera.Constants.FlashMode.off}
                     permissionDialogTitle={'Permission to use camera'}
                     permissionDialogMessage={'We need your permission to use your camera phone'}
                 />
                 <View style={{flex : 0, flexDirection : 'row', justifyContent : 'center',}}>
                     <TouchableOpacity
-                        onPress={this.takePicture.bind(this)}
+                        onPress={() => this.takePicture()}
                         style={styles.capture}
                     >
-                        <Text style={{fontSize : 14}}> SNAP </Text>
+                        <Text style={{fontSize : 14}}> {this.state.buttonText} </Text>
                     </TouchableOpacity>
                 </View>
 
