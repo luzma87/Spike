@@ -17,7 +17,7 @@ let RNFS = require('react-native-fs');
 import styles from "../styles/main";
 
 type Props = {};
-const maxTime = 10;
+const maxTime = 5;
 export default class MainScreen extends Component<Props> {
 
     static navigationOptions = {
@@ -42,9 +42,10 @@ export default class MainScreen extends Component<Props> {
             data
                 .then((param) => {
                     this.stopTimer(interval);
+                    let filename = `test-${Date.now()}.mp4`;
 
                     // let destPath = RNFS.DocumentDirectoryPath + '/test.mp4';
-                    let destPath = RNFS.ExternalStorageDirectoryPath + '/test.mp4';
+                    let destPath = RNFS.ExternalStorageDirectoryPath + '/' + filename;
                     const result = RNFS.moveFile(param.uri, destPath);
                     result.then(() => {
                         console.log(destPath);
