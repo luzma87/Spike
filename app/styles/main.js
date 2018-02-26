@@ -27,8 +27,8 @@ const styles = StyleSheet.create({
     },
     preview : {
         flex : 1,
-        justifyContent : 'flex-end',
-        alignItems : 'center'
+        opacity: 0,
+        maxHeight: 1
     },
     capture : {
         flex : 0,
