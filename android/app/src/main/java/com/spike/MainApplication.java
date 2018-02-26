@@ -13,6 +13,7 @@ import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 
 import org.reactnative.camera.RNCameraPackage;
+import com.futurice.rctaudiotoolkit.AudioPackage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -32,7 +33,8 @@ public class MainApplication extends Application implements ReactApplication {
             new VectorIconsPackage(),
             new ReactVideoPackage(),
             new RNFSPackage(),
-            new RNCameraPackage()
+            new RNCameraPackage(),
+            new AudioPackage()
       );
     }
 

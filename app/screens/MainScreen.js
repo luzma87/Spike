@@ -85,6 +85,10 @@ export default class MainScreen extends Component<Props> {
                     title="Go away"
                     color={this.state.buttonColor}
                     onPress={() => navigate('Video', {text: "foo bar!"})}/>
+                <Button
+                    title="Let's talk"
+                    color={this.state.buttonColor}
+                    onPress={() => navigate('Audio')}/>
             </View>
         );
     }
