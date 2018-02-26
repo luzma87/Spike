@@ -66,8 +66,8 @@ export default class MainScreen extends Component<Props> {
     }
 
     takePicture() {
-        // const rootDir = RNFS.DocumentDirectoryPath;
-        const rootDir = RNFS.ExternalStorageDirectoryPath;
+        const rootDir = RNFS.DocumentDirectoryPath;
+        // const rootDir = RNFS.ExternalStorageDirectoryPath;
 
         if (this.camera) {
             const options = {maxDuration: maxTime};
