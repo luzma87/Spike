@@ -4,7 +4,6 @@
 * run `npm install`
 * Install cocoapods with `brew install cocoapods`
 * run the command `pod init`
-* Open the file **Podfile** and delete the two last projects of the file just created
 * Run `pod install`
 * Open the **XXXX.xcworkspace** file in Xcode
 
