@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -22,6 +23,8 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		152668E22044907F00B4A0E4 /* libReactNativeAudioToolkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 152668E12044906400B4A0E4 /* libReactNativeAudioToolkit.a */; };
+		299409D6F599934252B62AAE /* libPods-SpikeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7744DE2AC9CDB16E2D0F2C89 /* libPods-SpikeTests.a */; };
+		2AEAC40ECE794B0D89D2E14F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1ED4C4B3288242CFBC09B089 /* MaterialIcons.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -34,24 +37,25 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* SpikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SpikeTests.m */; };
+		5AA21D1AFE59482CB75C3981 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 414FCE9AB4144A94B9425718 /* Entypo.ttf */; };
+		5B4CB6279B114DF5B3A09215 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4155F4AEA3F64A77B6EDCB47 /* Feather.ttf */; };
+		5D6D261E140D47E59549CADB /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 141BBE6935D9464D994926C0 /* SimpleLineIcons.ttf */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		63E7199DCAEA4B6F8092C66A /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 023F10BCE50647FD9AF49319 /* Ionicons.ttf */; };
+		6C9475EA20488E7B0095494A /* SpikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9475E920488E7B0095494A /* SpikeUITests.swift */; };
+		799BC783D3D1ABED14316379 /* libPods-Spike.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F332C769EDA915E1BC2483BC /* libPods-Spike.a */; };
+		7D93FEE2832C48CAB01E9F2D /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C4128A42CF748279AAF17F7 /* EvilIcons.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		8519074B3A384961BDFDBBA9 /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC47FCDA09DD4858A17D8DC8 /* libRNCamera.a */; };
-		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		EFB4844097CF4B2D9D90682B /* libRNFS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B8E0DFA5EA4EE1969E8427 /* libRNFS.a */; };
-		B8D0D6630A6E457198C89197 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD431EA52532473F8AAF21EC /* libRCTVideo.a */; };
-		5AA21D1AFE59482CB75C3981 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 414FCE9AB4144A94B9425718 /* Entypo.ttf */; };
-		7D93FEE2832C48CAB01E9F2D /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C4128A42CF748279AAF17F7 /* EvilIcons.ttf */; };
-		5B4CB6279B114DF5B3A09215 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4155F4AEA3F64A77B6EDCB47 /* Feather.ttf */; };
-		89CE830CB25940CAAF92A9A8 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FAA23B397474CDB97B58E9C /* FontAwesome.ttf */; };
-		C59CA8DC73C642A89011ADAC /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF6AE4CA38746AC93556F13 /* Foundation.ttf */; };
-		63E7199DCAEA4B6F8092C66A /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 023F10BCE50647FD9AF49319 /* Ionicons.ttf */; };
-		C2D6C8F588B84D5A866D5B66 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50D9826BBAA84C3788EAC80D /* MaterialCommunityIcons.ttf */; };
-		2AEAC40ECE794B0D89D2E14F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1ED4C4B3288242CFBC09B089 /* MaterialIcons.ttf */; };
 		89445637228747CBB8D42163 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6A83819E9AA4B91B965D0CB /* Octicons.ttf */; };
-		5D6D261E140D47E59549CADB /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 141BBE6935D9464D994926C0 /* SimpleLineIcons.ttf */; };
+		89CE830CB25940CAAF92A9A8 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FAA23B397474CDB97B58E9C /* FontAwesome.ttf */; };
+		B8D0D6630A6E457198C89197 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD431EA52532473F8AAF21EC /* libRCTVideo.a */; };
+		C2D6C8F588B84D5A866D5B66 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50D9826BBAA84C3788EAC80D /* MaterialCommunityIcons.ttf */; };
+		C59CA8DC73C642A89011ADAC /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF6AE4CA38746AC93556F13 /* Foundation.ttf */; };
 		C9CB8B3F962A48AEA2544C37 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E46E838B5DA4B98849ED0B9 /* Zocial.ttf */; };
 		D2AB70E26FCA401BBD268699 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5858AE54EDE04C52AD2A4A7B /* libRNVectorIcons.a */; };
+		EFB4844097CF4B2D9D90682B /* libRNFS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B8E0DFA5EA4EE1969E8427 /* libRNFS.a */; };
+		F69DBCA65CF3A2CB71DDEA65 /* libPods-Spike-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C059F82ACC4036B73A9A89 /* libPods-Spike-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -335,6 +339,34 @@
 			remoteGlobalIDString = 4107012F1ACB723B00C6AA39;
 			remoteInfo = RNCamera;
 		};
+		6C9475C420488DA80095494A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF89146968544D0A2F7AB96 /* RCTVideo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTVideo;
+		};
+		6C9475C620488DA80095494A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF89146968544D0A2F7AB96 /* RCTVideo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 641E28441F0EEC8500443AF6;
+			remoteInfo = "RCTVideo-tvOS";
+		};
+		6C9475E120488DA80095494A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAA19F612D1442D1A1D7470D /* RNVectorIcons.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5DBEB1501B18CEA900B34395;
+			remoteInfo = RNVectorIcons;
+		};
+		6C9475EC20488E7B0095494A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = Spike;
+		};
 		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
@@ -368,6 +400,9 @@
 		00E356EE1AD99517003FC87E /* SpikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* SpikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpikeTests.m; sourceTree = "<group>"; };
+		023F10BCE50647FD9AF49319 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		0711D2319F0AD6E919BAD050 /* Pods-Spike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spike.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spike/Pods-Spike.release.xcconfig"; sourceTree = "<group>"; };
+		0FAA23B397474CDB97B58E9C /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Spike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spike.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -377,34 +412,43 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Spike/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Spike/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Spike/main.m; sourceTree = "<group>"; };
+		141BBE6935D9464D994926C0 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		152668DC2044906400B4A0E4 /* ReactNativeAudioToolkit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeAudioToolkit.xcodeproj; path = "../node_modules/react-native-audio-toolkit/ios/ReactNativeAudioToolkit/ReactNativeAudioToolkit.xcodeproj"; sourceTree = "<group>"; };
+		1C4128A42CF748279AAF17F7 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		1ED4C4B3288242CFBC09B089 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		2CF89146968544D0A2F7AB96 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTVideo.xcodeproj; path = "../node_modules/react-native-video/ios/RCTVideo.xcodeproj"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Spike-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spike-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Spike-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spike-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E46E838B5DA4B98849ED0B9 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		318440373296BECB89F396F3 /* Pods-SpikeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpikeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpikeTests/Pods-SpikeTests.release.xcconfig"; sourceTree = "<group>"; };
+		414FCE9AB4144A94B9425718 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		4155F4AEA3F64A77B6EDCB47 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		4D3BE243C9AC28B887D388FE /* Pods-Spike-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spike-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spike-tvOSTests/Pods-Spike-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		50D9826BBAA84C3788EAC80D /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		531C893B5BDF435D89B039F1 /* RNCamera.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RNCamera.xcodeproj"; sourceTree = "<group>"; };
+		5858AE54EDE04C52AD2A4A7B /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		6C9475E720488E7B0095494A /* SpikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C9475E920488E7B0095494A /* SpikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpikeUITests.swift; sourceTree = "<group>"; };
+		6C9475EB20488E7B0095494A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7744DE2AC9CDB16E2D0F2C89 /* libPods-SpikeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpikeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		7AF6AE4CA38746AC93556F13 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		85BE53C97D128C4E5902A663 /* Pods-Spike-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spike-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spike-tvOSTests/Pods-Spike-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		97C059F82ACC4036B73A9A89 /* libPods-Spike-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Spike-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2B8E0DFA5EA4EE1969E8427 /* libRNFS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFS.a; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		B6A83819E9AA4B91B965D0CB /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		BC47FCDA09DD4858A17D8DC8 /* libRNCamera.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNCamera.a; sourceTree = "<group>"; };
-		F6C0AA7CBF7D4F2BBAFAC05A /* RNFS.xcodeproj */ = {isa = PBXFileReference; name = "RNFS.xcodeproj"; path = "../node_modules/react-native-fs/RNFS.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		A2B8E0DFA5EA4EE1969E8427 /* libRNFS.a */ = {isa = PBXFileReference; name = "libRNFS.a"; path = "libRNFS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
-		2CF89146968544D0A2F7AB96 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; name = "RCTVideo.xcodeproj"; path = "../node_modules/react-native-video/ios/RCTVideo.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		CD431EA52532473F8AAF21EC /* libRCTVideo.a */ = {isa = PBXFileReference; name = "libRCTVideo.a"; path = "libRCTVideo.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
-		414FCE9AB4144A94B9425718 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1C4128A42CF748279AAF17F7 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4155F4AEA3F64A77B6EDCB47 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0FAA23B397474CDB97B58E9C /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7AF6AE4CA38746AC93556F13 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		023F10BCE50647FD9AF49319 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		50D9826BBAA84C3788EAC80D /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1ED4C4B3288242CFBC09B089 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B6A83819E9AA4B91B965D0CB /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		141BBE6935D9464D994926C0 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2E46E838B5DA4B98849ED0B9 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		EAA19F612D1442D1A1D7470D /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; name = "RNVectorIcons.xcodeproj"; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		5858AE54EDE04C52AD2A4A7B /* libRNVectorIcons.a */ = {isa = PBXFileReference; name = "libRNVectorIcons.a"; path = "libRNVectorIcons.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		BE17DDA4B341445124FE6EA4 /* Pods-Spike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spike/Pods-Spike.debug.xcconfig"; sourceTree = "<group>"; };
+		CD431EA52532473F8AAF21EC /* libRCTVideo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTVideo.a; sourceTree = "<group>"; };
+		DCA34AF6F06A5D2BCA1D5D3B /* Pods-SpikeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpikeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpikeTests/Pods-SpikeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EAA19F612D1442D1A1D7470D /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
+		F332C769EDA915E1BC2483BC /* libPods-Spike.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Spike.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C0AA7CBF7D4F2BBAFAC05A /* RNFS.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFS.xcodeproj; path = "../node_modules/react-native-fs/RNFS.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -413,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
+				299409D6F599934252B62AAE /* libPods-SpikeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +466,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				152668E22044907F00B4A0E4 /* libReactNativeAudioToolkit.a in Frameworks */,
-				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
@@ -438,6 +482,7 @@
 				EFB4844097CF4B2D9D90682B /* libRNFS.a in Frameworks */,
 				B8D0D6630A6E457198C89197 /* libRCTVideo.a in Frameworks */,
 				D2AB70E26FCA401BBD268699 /* libRNVectorIcons.a in Frameworks */,
+				799BC783D3D1ABED14316379 /* libPods-Spike.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +502,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F69DBCA65CF3A2CB71DDEA65 /* libPods-Spike-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C9475E420488E7B0095494A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -603,8 +656,24 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				F332C769EDA915E1BC2483BC /* libPods-Spike.a */,
+				97C059F82ACC4036B73A9A89 /* libPods-Spike-tvOSTests.a */,
+				7744DE2AC9CDB16E2D0F2C89 /* libPods-SpikeTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D18B7C440C4B02F8ED6FB2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE17DDA4B341445124FE6EA4 /* Pods-Spike.debug.xcconfig */,
+				0711D2319F0AD6E919BAD050 /* Pods-Spike.release.xcconfig */,
+				4D3BE243C9AC28B887D388FE /* Pods-Spike-tvOSTests.debug.xcconfig */,
+				85BE53C97D128C4E5902A663 /* Pods-Spike-tvOSTests.release.xcconfig */,
+				DCA34AF6F06A5D2BCA1D5D3B /* Pods-SpikeTests.debug.xcconfig */,
+				318440373296BECB89F396F3 /* Pods-SpikeTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
@@ -616,11 +685,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		5F6C9A9A768C4222BAF6F5BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				414FCE9AB4144A94B9425718 /* Entypo.ttf */,
+				1C4128A42CF748279AAF17F7 /* EvilIcons.ttf */,
+				4155F4AEA3F64A77B6EDCB47 /* Feather.ttf */,
+				0FAA23B397474CDB97B58E9C /* FontAwesome.ttf */,
+				7AF6AE4CA38746AC93556F13 /* Foundation.ttf */,
+				023F10BCE50647FD9AF49319 /* Ionicons.ttf */,
+				50D9826BBAA84C3788EAC80D /* MaterialCommunityIcons.ttf */,
+				1ED4C4B3288242CFBC09B089 /* MaterialIcons.ttf */,
+				B6A83819E9AA4B91B965D0CB /* Octicons.ttf */,
+				141BBE6935D9464D994926C0 /* SimpleLineIcons.ttf */,
+				2E46E838B5DA4B98849ED0B9 /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		6C1B4683203E0F020002641F /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				BC47FCDA09DD4858A17D8DC8 /* libRNCamera.a */,
 				A2B8E0DFA5EA4EE1969E8427 /* libRNFS.a */,
+				CD431EA52532473F8AAF21EC /* libRCTVideo.a */,
+				5858AE54EDE04C52AD2A4A7B /* libRNVectorIcons.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -631,6 +720,32 @@
 				6C1B46BD203E0F060002641F /* libRNCamera.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6C9475AD20488DA80095494A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C9475E220488DA80095494A /* libRNVectorIcons.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C9475AF20488DA80095494A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C9475C520488DA80095494A /* libRCTVideo.a */,
+				6C9475C720488DA80095494A /* libRCTVideo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C9475E820488E7B0095494A /* SpikeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6C9475E920488E7B0095494A /* SpikeUITests.swift */,
+				6C9475EB20488E7B0095494A /* Info.plist */,
+			);
+			path = SpikeUITests;
 			sourceTree = "<group>";
 		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
@@ -681,10 +796,12 @@
 				13B07FAE1A68108700A75B9A /* Spike */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* SpikeTests */,
+				6C9475E820488E7B0095494A /* SpikeUITests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				6C1B4683203E0F020002641F /* Recovered References */,
 				5F6C9A9A768C4222BAF6F5BB /* Resources */,
+				4D18B7C440C4B02F8ED6FB2C /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -698,6 +815,7 @@
 				00E356EE1AD99517003FC87E /* SpikeTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* Spike-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* Spike-tvOSTests.xctest */,
+				6C9475E720488E7B0095494A /* SpikeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -711,25 +829,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5F6C9A9A768C4222BAF6F5BB /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				414FCE9AB4144A94B9425718 /* Entypo.ttf */,
-				1C4128A42CF748279AAF17F7 /* EvilIcons.ttf */,
-				4155F4AEA3F64A77B6EDCB47 /* Feather.ttf */,
-				0FAA23B397474CDB97B58E9C /* FontAwesome.ttf */,
-				7AF6AE4CA38746AC93556F13 /* Foundation.ttf */,
-				023F10BCE50647FD9AF49319 /* Ionicons.ttf */,
-				50D9826BBAA84C3788EAC80D /* MaterialCommunityIcons.ttf */,
-				1ED4C4B3288242CFBC09B089 /* MaterialIcons.ttf */,
-				B6A83819E9AA4B91B965D0CB /* Octicons.ttf */,
-				141BBE6935D9464D994926C0 /* SimpleLineIcons.ttf */,
-				2E46E838B5DA4B98849ED0B9 /* Zocial.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -737,9 +836,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "SpikeTests" */;
 			buildPhases = (
+				EA6BDE30507A4DD75C82BDAE /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				934BFECB28CC2571804FD6C3 /* [CP] Embed Pods Frameworks */,
+				CF4B1C2FA9EB777E2C0D119E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -755,10 +857,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Spike" */;
 			buildPhases = (
+				9398BEF08A0C29C04AA49B7F /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				012E1D55B073450D1C0280B8 /* [CP] Embed Pods Frameworks */,
+				45D298B111DEC87244977B70 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -791,9 +896,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Spike-tvOSTests" */;
 			buildPhases = (
+				00BEE04E7FCE29ED16F4A579 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
+				8C2C57C44A1E463E14050FAA /* [CP] Embed Pods Frameworks */,
+				E8DEFA4206B27B670DCCADA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -805,12 +913,31 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* Spike-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		6C9475E620488E7B0095494A /* SpikeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C9475EE20488E7B0095494A /* Build configuration list for PBXNativeTarget "SpikeUITests" */;
+			buildPhases = (
+				6C9475E320488E7B0095494A /* Sources */,
+				6C9475E420488E7B0095494A /* Frameworks */,
+				6C9475E520488E7B0095494A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C9475ED20488E7B0095494A /* PBXTargetDependency */,
+			);
+			name = SpikeUITests;
+			productName = SpikeUITests;
+			productReference = 6C9475E720488E7B0095494A /* SpikeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
@@ -829,6 +956,12 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+					6C9475E620488E7B0095494A = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = Q9N25B75ZN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 				};
 			};
@@ -885,6 +1018,10 @@
 					ProjectRef = 00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */;
 				},
 				{
+					ProductGroup = 6C9475AF20488DA80095494A /* Products */;
+					ProjectRef = 2CF89146968544D0A2F7AB96 /* RCTVideo.xcodeproj */;
+				},
+				{
 					ProductGroup = 139FDEE71B06529A00C62182 /* Products */;
 					ProjectRef = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
 				},
@@ -904,6 +1041,10 @@
 					ProductGroup = 152668D42044901E00B4A0E4 /* Products */;
 					ProjectRef = F6C0AA7CBF7D4F2BBAFAC05A /* RNFS.xcodeproj */;
 				},
+				{
+					ProductGroup = 6C9475AD20488DA80095494A /* Products */;
+					ProjectRef = EAA19F612D1442D1A1D7470D /* RNVectorIcons.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -911,6 +1052,7 @@
 				00E356ED1AD99517003FC87E /* SpikeTests */,
 				2D02E47A1E0B4A5D006451C7 /* Spike-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* Spike-tvOSTests */,
+				6C9475E620488E7B0095494A /* SpikeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1182,6 +1324,27 @@
 			remoteRef = 6C1B46BC203E0F060002641F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		6C9475C520488DA80095494A /* libRCTVideo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTVideo.a;
+			remoteRef = 6C9475C420488DA80095494A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6C9475C720488DA80095494A /* libRCTVideo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTVideo.a;
+			remoteRef = 6C9475C620488DA80095494A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6C9475E220488DA80095494A /* libRNVectorIcons.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNVectorIcons.a;
+			remoteRef = 6C9475E120488DA80095494A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1248,9 +1411,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C9475E520488E7B0095494A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		00BEE04E7FCE29ED16F4A579 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spike-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1265,6 +1453,21 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		012E1D55B073450D1C0280B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spike/Pods-Spike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1278,6 +1481,130 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		45D298B111DEC87244977B70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Spike/Pods-Spike-resources.sh",
+				"${PODS_ROOT}/GoogleMobileVision/FaceDetector/Resources/BCLjoy_100.emd",
+				"${PODS_ROOT}/GoogleMobileVision/FaceDetector/Resources/BCLlefteyeclosed_200.emd",
+				"${PODS_ROOT}/GoogleMobileVision/FaceDetector/Resources/BCLrighteyeclosed_200.emd",
+				"${PODS_ROOT}/GoogleMobileVision/FaceDetector/Resources/LMprec_600.emd",
+				"${PODS_ROOT}/GoogleMobileVision/FaceDetector/Resources/MFTprec_202.emd",
+				"${PODS_ROOT}/GoogleMobileVision/FaceDetector/Resources/PFFprec_702.emd",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BCLjoy_100.emd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BCLlefteyeclosed_200.emd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BCLrighteyeclosed_200.emd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LMprec_600.emd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MFTprec_202.emd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PFFprec_702.emd",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spike/Pods-Spike-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C2C57C44A1E463E14050FAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spike-tvOSTests/Pods-Spike-tvOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		934BFECB28CC2571804FD6C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpikeTests/Pods-SpikeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9398BEF08A0C29C04AA49B7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spike-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF4B1C2FA9EB777E2C0D119E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpikeTests/Pods-SpikeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8DEFA4206B27B670DCCADA5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spike-tvOSTests/Pods-Spike-tvOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA6BDE30507A4DD75C82BDAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpikeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1316,6 +1643,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C9475E320488E7B0095494A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C9475EA20488E7B0095494A /* SpikeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1328,6 +1663,11 @@
 			isa = PBXTargetDependency;
 			target = 2D02E47A1E0B4A5D006451C7 /* Spike-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+		6C9475ED20488E7B0095494A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* Spike */;
+			targetProxy = 6C9475EC20488E7B0095494A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1346,6 +1686,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCA34AF6F06A5D2BCA1D5D3B /* Pods-SpikeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1380,6 +1721,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 318440373296BECB89F396F3 /* Pods-SpikeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -1411,6 +1753,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE17DDA4B341445124FE6EA4 /* Pods-Spike.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1437,6 +1780,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0711D2319F0AD6E919BAD050 /* Pods-Spike.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1542,6 +1886,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D3BE243C9AC28B887D388FE /* Pods-Spike-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1570,6 +1915,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85BE53C97D128C4E5902A663 /* Pods-Spike-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1593,6 +1939,77 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spike-tvOS.app/Spike-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		6C9475EF20488E7B0095494A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Q9N25B75ZN;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SpikeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.SpikeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Spike;
+			};
+			name = Debug;
+		};
+		6C9475F020488E7B0095494A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Q9N25B75ZN;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SpikeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.SpikeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Spike;
 			};
 			name = Release;
 		};
@@ -1707,6 +2124,15 @@
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
 				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C9475EE20488E7B0095494A /* Build configuration list for PBXNativeTarget "SpikeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C9475EF20488E7B0095494A /* Debug */,
+				6C9475F020488E7B0095494A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

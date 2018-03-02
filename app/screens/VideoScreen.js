@@ -153,14 +153,17 @@ export default class MainScreen extends Component<Props> {
                     />
                     <Button
                         onPress={() => this.player.stop()}
+                        accessibilityLabel="btn6"
                         title="Stop"
                     />
                     <Button
                         onPress={() => this.player.pause()}
+                        accessibilityLabel="btn7"
                         title="Pause"
                     />
                     <Button
                         onPress={() => this.player.resume()}
+                        accessibilityLabel="btn8"
                         title="Resume"
                     />
                 </View>

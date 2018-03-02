@@ -41,6 +41,9 @@ export default class MainScreen extends Component<Props> {
         }
     }
 
+    componentDidMount() {
+    }
+
     changeButtonColor() {
         let newColor;
         if (this.state.buttonColor === "#abcdef") {
@@ -75,18 +78,24 @@ export default class MainScreen extends Component<Props> {
                 </Text>
                 <Button
                     title="Change buttons color"
+                    accessibilityLabel="btn1"
                     color={this.state.buttonColor}
                     onPress={() => this.changeButtonColor()}/>
                 <Button
                     title="Change the text"
+                    accessibilityLabel="btn2"
                     color={this.state.buttonColor}
                     onPress={() => this.changeText()}/>
                 <Button
                     title="Go away"
+                    accessibilityLabel="btn3"
                     color={this.state.buttonColor}
-                    onPress={() => navigate('Video', {text: "foo bar!"})}/>
+                    onPress={() => navigate('Video', {text : "foo bar!"})}/>
                 <Button
-                    title="Let's talk"
+                    accessible={true}
+                    accessibilityLabel="Let's talk1"
+                    testID="buttonAudio"
+                    title="Let's talk2"
                     color={this.state.buttonColor}
                     onPress={() => navigate('Audio')}/>
             </View>

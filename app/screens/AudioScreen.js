@@ -24,8 +24,6 @@ import styles from "../styles/main";
 type Props = {};
 const maxTime = 2;
 
-
-
 export default class MainScreen extends Component<Props> {
 
     static navigationOptions = {
@@ -36,11 +34,14 @@ export default class MainScreen extends Component<Props> {
         super(props);
 
         this.state = {
-            buttonText : "Start",
+            buttonText : "Staaart",
             timer : 0,
-            recording: false,
+            recording : false,
         };
 
+    }
+
+    componentDidMount() {
     }
 
     listFiles(rootDir) {
@@ -70,7 +71,13 @@ export default class MainScreen extends Component<Props> {
             recorder.stop(() => {
                 console.log("Stopped recording")
                 this.listFiles(RNFS.DocumentDirectoryPath);
-                this.setState({...this.state, ...{recording : false, recorder: null,buttonText: "Start"}});
+                this.setState({
+                    ...this.state, ...{
+                        recording : false,
+                        recorder : null,
+                        buttonText : "Staaart"
+                    }
+                });
             })
         } catch (error) {
             console.error(error);
@@ -85,7 +92,13 @@ export default class MainScreen extends Component<Props> {
             console.log(`Starting recording for ${filename}`)
             let recorder = new Recorder(filename, options);
             recorder.record(() => {
-                this.setState({...this.state, ...{recorder: recorder, recording : true, buttonText: "Stop"}});
+                this.setState({
+                    ...this.state, ...{
+                        recorder : recorder,
+                        recording : true,
+                        buttonText : "Stooop"
+                    }
+                });
                 console.log(`Recording started for ${filename}`)
             })
         } catch (error) {
@@ -107,15 +120,12 @@ export default class MainScreen extends Component<Props> {
     render() {
         return (
             <View style={styles.container2}>
-                <View style={{flex : 0, flexDirection : 'row', justifyContent : 'center',}}>
-                    <TouchableOpacity
-                        onPress={() => this.toggleRecording()}
-                        style={styles.capture}
-                    >
-                        <Text style={{fontSize : 14}}> {this.state.buttonText} </Text>
-                    </TouchableOpacity>
-                </View>
-
+                <Button
+                    accessible={true}
+                    accessibilityLabel={this.state.buttonText}
+                    testID="audioButtonStartStop"
+                    onPress={() => this.toggleRecording()}
+                    title={this.state.buttonText}/>
             </View>
         );
     }
