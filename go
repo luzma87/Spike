@@ -14,6 +14,7 @@ init_ios_fg=$(tput setaf 5)
 test_ios_fg=$(tput setaf 6)
 test_lint_local=$(tput setaf 7)
 test_lint_cached=$(tput setaf 5)
+scan_vulnerabilities=$(tput setaf 3)
 
 function timestamp() {
   date +"%Y%m%d_%H%M%S"
@@ -131,6 +132,11 @@ function task_test_lint_cached {
   (test_lint)
 }
 
+function task_scan_vulnerabilities {
+    HAWKEYE="$(git rev-parse --show-toplevel)/node_modules/.bin/hawkeye"
+    $HAWKEYE scan
+}
+
 function task_help {
   help_message="usage "
   help_message="${help_message} ${build_android_fg}go build_android${normal}"
@@ -138,6 +144,7 @@ function task_help {
   help_message="${help_message} | ${test_ios_fg}go test_ios${normal}"
   help_message="${help_message} | ${test_lint_local}go test_lint_local${normal}"
   help_message="${help_message} | ${test_lint_cached}go test_lint_cached${normal}"
+  help_message="${help_message} | ${scan_vulnerabilities}go scan_vulnerabilities${normal}"
   echo "${help_message}"
 }
 
@@ -148,6 +155,6 @@ case ${CMD} in
   init_ios) task_init_ios ;;
   test_ios) task_test_ios ;;
   test_lint_local) task_test_lint_local ;;
-  test_lint_cached) task_test_lint_cached ;;
+  scan_vulnerabilities) task_scan_vulnerabilities ;;
   *) task_help ;;
 esac
