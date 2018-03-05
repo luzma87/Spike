@@ -31,17 +31,21 @@ function task_init_ios {
     echo "${init_ios_fg}Initializing project with FaceDetector${normal}"
     (cd ios && pod install)
   else
-    echo "${init_ios_fg}Please install cocoaPods ${red}(brew install brew install cocoapods) ${normal}"
+    echo "${init_ios_fg}Please install cocoaPods ${red}( brew install brew install cocoapods ) ${normal}"
   fi
 }
 
 function task_test_ios {
+  if which xcpretty &>/dev/null ; then
     (cd ios && xcodebuild \
-  -workspace Spike.xcworkspace \
-  -scheme Spike \
-  -sdk iphonesimulator \
-  -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.2' \
-  test | xcpretty --test --color -r html)
+      -workspace Spike.xcworkspace \
+      -scheme Spike \
+      -sdk iphonesimulator \
+      -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.2' \
+      test | xcpretty --test --color -r html)
+  else
+    echo "${test_ios_fg}Please install xcpretty ${red}( gem install xcpretty ) ${normal}"
+  fi
 }
 
 function task_help {
