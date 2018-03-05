@@ -135,12 +135,6 @@ function task_test_lint_cached {
 function task_scan_vulnerabilities {
     HAWKEYE="$(git rev-parse --show-toplevel)/node_modules/.bin/hawkeye"
     STATUS=$($HAWKEYE scan)
-    echo $STATUS
-    if [[ "$?" == 0 ]]; then
-        echo ${green}"Scan Vulnerabilities Passed"
-      else
-        echo ${red}"Scan Vulnerabilities Failed"
-    fi
 }
 
 function task_help {
