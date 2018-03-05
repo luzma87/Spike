@@ -155,6 +155,7 @@ case ${CMD} in
   init_ios) task_init_ios ;;
   test_ios) task_test_ios ;;
   test_lint_local) task_test_lint_local ;;
+  test_lint_cached) task_test_lint_cached ;;
   scan_vulnerabilities) task_scan_vulnerabilities ;;
   *) task_help ;;
 esac
