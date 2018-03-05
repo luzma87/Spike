@@ -126,7 +126,7 @@ function task_test_lint_local {
 
 function task_test_lint_cached {
   set +eu
-  STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep ".jsx\{0,1\}$")
+  STAGED_FILES=$(git show --pretty="" --name-only | grep ".jsx\{0,1\}$")
   LOCAL=false
   (test_lint)
 }
