@@ -113,7 +113,7 @@ function test_lint() {
             fi
         fi
     fi
-
+    set -eu
     exit $?
 }
 
