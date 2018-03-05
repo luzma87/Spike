@@ -10,4 +10,5 @@ const SimpleApp = StackNavigator({
   Audio: { screen: AudioScreen, title: 'Audio Screen' },
 });
 
+
 AppRegistry.registerComponent('Spike', () => SimpleApp);
