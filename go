@@ -16,6 +16,7 @@ test_lint_local=$(tput setaf 7)
 test_lint_cached=$(tput setaf 5)
 scan_vulnerabilities=$(tput setaf 3)
 install_hooks=$(tput setaf 2)
+run_unit_tests=$(tput setaf 4)
 
 function timestamp() {
   date +"%Y%m%d_%H%M%S"
@@ -151,6 +152,11 @@ function task_install_hooks {
 
 }
 
+function task_run_unit_tests {
+    ROOT="$(git rev-parse --show-toplevel)"
+    npm test
+}
+
 function task_help {
   help_message="usage "
   help_message="${help_message} ${build_android_fg}go build_android${normal}"
@@ -160,6 +166,7 @@ function task_help {
   help_message="${help_message} | ${test_lint_cached}go test_lint_cached${normal}"
   help_message="${help_message} | ${scan_vulnerabilities}go scan_vulnerabilities${normal}"
   help_message="${help_message} | ${install_hooks}go install_hooks${normal}"
+  help_message="${help_message} | ${run_unit_tests}go run_unit_tests${normal}"
   echo "${help_message}"
 }
 
@@ -173,5 +180,6 @@ case ${CMD} in
   test_lint_cached) task_test_lint_cached ;;
   scan_vulnerabilities) task_scan_vulnerabilities ;;
   install_hooks) task_install_hooks ;;
+  run_unit_tests) task_run_unit_tests ;;
   *) task_help ;;
 esac

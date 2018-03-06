@@ -3,7 +3,12 @@ GO="$(git rev-parse --show-toplevel)/go"
 #GO Tasks
 TEST_LINT_CACHED=test_lint_cached
 SCAN_CHECKER=scan_vulnerabilities
+RUN_UNIT_TEST=run_unit_tests
 
 echo 'Check for ESLint Airbnb Guidelines'
 echo $GO $TEST_LINT_CACHED
 $GO $TEST_LINT_CACHED
+
+echo 'Running Unit Tests'
+echo $GO $RUN_UNIT_TEST
+$GO $RUN_UNIT_TEST
