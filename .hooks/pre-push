@@ -1,0 +1,9 @@
+#!/bin/sh
+GO="$(git rev-parse --show-toplevel)/go"
+#GO Tasks
+TEST_LINT_CACHED=test_lint_cached
+SCAN_CHECKER=scan_vulnerabilities
+
+echo 'Check for ESLint Airbnb Guidelines'
+echo $GO $TEST_LINT_CACHED
+$GO $TEST_LINT_CACHED

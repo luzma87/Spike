@@ -15,6 +15,7 @@ test_ios_fg=$(tput setaf 6)
 test_lint_local=$(tput setaf 7)
 test_lint_cached=$(tput setaf 5)
 scan_vulnerabilities=$(tput setaf 3)
+install_hooks=$(tput setaf 2)
 
 function timestamp() {
   date +"%Y%m%d_%H%M%S"
@@ -137,6 +138,19 @@ function task_scan_vulnerabilities {
     STATUS=$($HAWKEYE scan)
 }
 
+function task_install_hooks {
+    ROOT="$(git rev-parse --show-toplevel)"
+    echo ${green}"Installing hooks in local machine"
+    cp -r $ROOT/.hooks/. $ROOT/.git/hooks
+
+    if [ $? -ne 0 ]; then
+        echo ${red}"There was an error installing hooks"${normal}
+     else
+        echo ${green}"Hooks installed successfully"${normal}
+    fi
+
+}
+
 function task_help {
   help_message="usage "
   help_message="${help_message} ${build_android_fg}go build_android${normal}"
@@ -145,6 +159,7 @@ function task_help {
   help_message="${help_message} | ${test_lint_local}go test_lint_local${normal}"
   help_message="${help_message} | ${test_lint_cached}go test_lint_cached${normal}"
   help_message="${help_message} | ${scan_vulnerabilities}go scan_vulnerabilities${normal}"
+  help_message="${help_message} | ${install_hooks}go install_hooks${normal}"
   echo "${help_message}"
 }
 
@@ -157,5 +172,6 @@ case ${CMD} in
   test_lint_local) task_test_lint_local ;;
   test_lint_cached) task_test_lint_cached ;;
   scan_vulnerabilities) task_scan_vulnerabilities ;;
+  install_hooks) task_install_hooks ;;
   *) task_help ;;
 esac
