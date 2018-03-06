@@ -146,6 +146,7 @@ function task_install_hooks {
 function task_run_unit_tests {
     ROOT="$(git rev-parse --show-toplevel)"
     npm test
+    exit $?
 }
 
 function task_help {
