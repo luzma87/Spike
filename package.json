@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "chance": "^1.0.13",
+    "eslint-plugin-jest": "^21.13.0",
     "hawkeye-scanner": "^1.0.2",
     "npm": "^5.7.1",
     "react": "16.2.0",
