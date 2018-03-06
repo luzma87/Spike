@@ -106,15 +106,6 @@ function test_lint() {
         done
 
         echo ${green}"Javascript validation completed!"
-
-        if ! $LOCAL; then
-            if ! $PASS; then
-              echo ${red}"COMMIT FAILED: ${normal}Your commit contains files that should pass ESLint but do not. Please fix the ESLint errors and try again."
-              exit 1
-            else
-              echo ${green}"COMMIT SUCCEEDED"
-            fi
-        fi
     fi
     set -eu
     exit $?
